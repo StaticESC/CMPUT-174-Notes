@@ -1,0 +1,20 @@
+Pygame relevant docs for CMPUT 174:
+    Font:
+
+        pygame.font.SysFont(name, size, bold=False, italic=False) -> Font
+
+    Draw:
+        pygame.draw.line(surface, color, start_pos, end_pos, width=1) -> Rect
+        pygame.draw.circle(surface, color, center, radius) -> Rect
+        pygame.draw.rect(surface, color, rect) -> Rect
+
+    Rect:
+        pygame.Rect(left, top, width, height) -> Rect
+        pygame.rect.move(x, y) -> Rect
+
+    Surface:
+        pygame.surface.blit(source_surface, dest_coordinates_tuple) # self is the surface on which we draw
+        pygame.Surface((width, height)) # But we dont do this, we rather do...
+
+    Display:
+        pygame.display.set_mode(size=(0, 0), flags=0, depth=0, display=0, vsync=0) -> Surface
